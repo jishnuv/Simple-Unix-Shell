@@ -9,13 +9,13 @@
 
 #define MAXSIZE 1000
 
-int create_arg(char command[], char *argv[], int start);
-void call_exec(char command[]);
-void set_lpipe(int * lpipe);
-void set_rpipe(int *rpipe);
-pid_t fork_and_chain(int *lpipe, int lset, int *rpipe, int rset, char *argv[]);
-int get_line(char s[], int lim);
-void command_preprocessor(char command[]);
+int create_arg(char [], char *[], int );
+void call_exec(char []);
+void set_lpipe(int * );
+void set_rpipe(int * );
+pid_t fork_and_chain(int *, int , int *, int , char *[]);
+int get_line(char [], int );
+void command_preprocessor(char []);
 
 int main()
 {	
